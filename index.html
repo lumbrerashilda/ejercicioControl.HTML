@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <link rel="stylesheet" href="style.css">
+    <meta charset="UTF-8">
+    <style>
+      .posimagen {
+        position: absolute;
+        height: 100px;
+        width: 100px;
+        top: auto;
+        left: auto;
+      }
+      
+   
+
+    </style>
+</head>
+
+<script>
+    let arriba=100; 
+    let derecha=100;
+    let pos= 50;
+    let posTop=20;
+    let posletf=20;
+
+     let Pimagen = document.getElementNById(posimagen)
+    
+    function arriba(){
+        alert('Imagen, Subiendo');
+        posTop= -pos;
+        imagen.style.margintop = posTop + "px";
+
+          
+       
+    }
+
+    function abajo(){
+        alert('Imagen  Bajando');
+        document.getElementNById("abajo").innerHTML;
+        posTop= +pos;
+        imagen.style.margintop = posTop + "px";
+
+    }
+
+    function izquierda(){
+        alert('Imagen, Hacia la izquierda');
+        document.getElementNById("izquierda ").innerHTML;
+        posletf= -pos;
+        imagen.style.marginleft = posletf + "px";
+    }
+    function derecha(){
+        alert(' Imagen, Hacia la derecha ');
+        document.getElementNById(" derecha  ").innerHTML ;
+        posletf= +pos;
+        imagen.style.marginleft = posletf + "px";
+       
+    }
+
+</script>
+<body background="ar.jpg">
+
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <h1>Vamos a la Playa </h1>
+    <div class="imagen " id="imagen">
+     <img  src="playa.jpg" alt="Vamos a la palya o ooo ooo">
+
+
+    </div>
+
+    <h2  > Mover Arriba </h2><br>
+    <input type="button" value="Arriba" onclick="arriba(this)" > 
+     <h2  > Mover Abajo </h2><br>
+    <input type="button"  value="Abajo" onclick="abajo(this)" >
+     <h2 > Mover a la Izquierda </h2><br>
+    <input type="button"  value="Izquierda" onclick="izquierda(this)" >
+      <h2 > Mover a la Derecha </h2><br>
+    <input type="button" value="Derecha" onclick="derecha(this)" >
+    <h2 > Reinisiar </h2><br>
+    <input type="button"value="Reiniciar" onclick="reiniciar(this)" >
+  
+
+
+
+</div>
+               
+       
+    
+</body>
